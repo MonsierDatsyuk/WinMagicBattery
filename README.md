@@ -7,3 +7,5 @@ Project "WinMagicBattery" solves two issues with the Apple Magic Keyboard 2 (A18
 Original repositories:
 1. https://github.com/bitwiser73/abracadabra
 2. https://github.com/hank1101444/WinMagicBattery
+
+Version project - 0.0.1
