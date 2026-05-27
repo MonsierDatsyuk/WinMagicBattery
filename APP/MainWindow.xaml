@@ -1,0 +1,43 @@
+﻿<Window x:Class="MagicKeyboardMonitor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Magic Keyboard Settings" Width="400"
+        SizeToContent="Height" MinHeight="280"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
+        Background="#F3F4F6"
+        Icon="pack://application:,,,/logo/no-back-logo.ico"
+        >
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Device Setup &amp; Binding" FontSize="20" FontWeight="Bold" Foreground="#1F2937" Margin="0,0,0,15"/>
+
+        <TextBlock Grid.Row="1" Text="Select your Magic Keyboard to monitor:" FontSize="14" Foreground="#4B5563" Margin="0,0,0,5"/>
+
+        <ComboBox Grid.Row="2" x:Name="DeviceComboBox" Height="35" FontSize="14" Padding="5"/>
+
+        <CheckBox Grid.Row="3" x:Name="AutoStartCheckBox" Content="Start automatically with Windows" FontSize="14" Foreground="#1F2937" Margin="0,15,0,0" Cursor="Hand"/>
+
+        <TextBlock Grid.Row="4" x:Name="StatusText" Text="Scanning for devices..." FontSize="12" Foreground="#6B7280" Margin="0,10,0,0" VerticalAlignment="Top"/>
+
+        <CheckBox Grid.Row="5" x:Name="FnLockCheckBox" Content="Fn-Lock On" FontSize="14" Foreground="#1F2937" Margin="0,10,0,10" Cursor="Hand" Checked="FnLockCheckBox_Checked"/>
+
+        <Button Grid.Row="6" x:Name="SaveButton" Content="Save &amp; Start Monitoring" Height="40" FontSize="14" FontWeight="Bold" 
+                Background="#0078D4" Foreground="White" BorderThickness="0" Cursor="Hand" Click="SaveButton_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>

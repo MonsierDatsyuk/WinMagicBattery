@@ -1,0 +1,27 @@
+.vs/
+
+# =========================
+# Visual Studio 專用忽略清單
+# =========================
+
+# 1. 編譯產生的資料夾 (絕對不能上傳！)
+[Bb]in/
+[Oo]bj/
+
+# 2. Visual Studio 隱藏的個人設定資料夾
+.vs/
+
+# 3. 個人使用者設定檔
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# 4. 發行產生的暫存檔
+*.pubxml
+*.pubxml.user
+
+# 5. 其他暫存與快取檔案
+*.cache
+*.log
+Thumbs.db

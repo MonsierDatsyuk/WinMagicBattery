@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <!-- 科技感漸層 -->
+    <linearGradient id="g1" x1="80" y1="80" x2="432" y2="432" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9AF7FF"></stop>
+      <stop offset="0.55" stop-color="#6AA8FF"></stop>
+      <stop offset="1" stop-color="#B56BFF"></stop>
+    </linearGradient>
+
+    <!-- 柔和外光 -->
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="b"></feGaussianBlur>
+      <feColorMatrix in="b" type="matrix" values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 .7 0" result="c"></feColorMatrix>
+      <feMerge>
+        <feMergeNode in="c"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+
+    <!-- 內部陰影（增加立體感） -->
+    <filter id="inner" x="-20%" y="-20%" width="140%" height="140%">
+      <feOffset dx="0" dy="2"></feOffset>
+      <feGaussianBlur stdDeviation="6" result="shadow"></feGaussianBlur>
+      <feComposite in="shadow" in2="SourceAlpha" operator="out" result="innerShadow"></feComposite>
+      <feColorMatrix in="innerShadow" type="matrix" values="0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 .55 0"></feColorMatrix>
+      <feMerge>
+        <feMergeNode></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+
+    <!-- 圓角遮罩：做成 app icon 的「柔圓角」底板 -->
+    <clipPath id="round">
+      <rect x="56" y="56" width="400" height="400" rx="96"></rect>
+    </clipPath>
+  </defs>
+
+  <!-- 背景底板 -->
+  <g clip-path="url(#round)">
+    <rect x="56" y="56" width="400" height="400" rx="96" fill="#0B1020"></rect>
+    <rect x="56" y="56" width="400" height="400" rx="96" fill="url(#g1)" opacity="0.12"></rect>
+    <!-- 微噪點/網格感（簡化：用細線） -->
+    <g opacity="0.10">
+      <path d="M56 160H456M56 256H456M56 352H456" stroke="#9AF7FF" stroke-width="1"></path>
+      <path d="M160 56V456M256 56V456M352 56V456" stroke="#6AA8FF" stroke-width="1"></path>
+    </g>
+  </g>
+
+  <!-- 主圖標群組 -->
+  <g filter="url(#glow)" transform="translate(-65,-50) scale(1,1.2)">
+    <!-- 蘋果抽象輪廓（原創：非官方比例） -->
+    <path d="M255 134
+         C224 134 195 149 178 175
+         C154 212 155 268 184 318
+         C209 360 228 392 255 392
+         C282 392 299 378 326 378
+         C353 378 369 392 395 392
+         C424 392 443 360 468 318
+         C495 270 492 224 468 195
+         C450 173 423 160 396 160
+         C372 160 355 171 335 171
+         C317 171 296 160 270 160
+         C265 160 260 158 255 158
+         Z" fill="none" stroke="url(#g1)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"></path>
+
+    <!-- 葉子（抽象） -->
+    <path d="M285 106
+         C306 97 330 100 344 118
+         C326 132 305 136 285 134
+         C280 123 280 112 285 106
+         Z" fill="none" stroke="url(#g1)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"></path>
+
+    <!-- Windows 視窗四格（嵌在輪廓內右側） -->
+    <g filter="url(#inner)" opacity="0.92">
+      <rect x="286" y="198" width="70" height="62" rx="10" fill="url(#g1)" opacity="0.85"></rect>
+      <rect x="366" y="198" width="70" height="62" rx="10" fill="url(#g1)" opacity="0.55"></rect>
+      <rect x="286" y="270" width="70" height="62" rx="10" fill="url(#g1)" opacity="0.55"></rect>
+      <rect x="366" y="270" width="70" height="62" rx="10" fill="url(#g1)" opacity="0.85"></rect>
+    </g>
+
+    <!-- 電量條（右下） -->
+    <g transform="translate(-20,0)">
+      <rect x="168" y="336" width="170" height="44" rx="14" fill="none" stroke="url(#g1)" stroke-width="10" opacity="0.95"></rect>
+      <rect x="330" y="350" width="16" height="16" rx="4" fill="url(#g1)" opacity="0.95"></rect>
+      <!-- 內部電量填充（可依電量改寬度：width=...） -->
+      <rect x="178" y="346" width="104" height="24" rx="10" fill="url(#g1)" opacity="0.85"></rect>
+      <!-- 閃電 -->
+      <path d="M246 344 L228 368 H244 L236 390 L268 358 H252 Z" fill="#EAFBFF" opacity="0.95"></path>
+    </g>
+  </g>
+
+  <!-- 前景細描邊（更銳利） -->
+  <g clip-path="url(#round)" opacity="0.35">
+    <rect x="56" y="56" width="400" height="400" rx="96" fill="none" stroke="url(#g1)" stroke-width="2"></rect>
+  </g>
+</svg>
