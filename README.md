@@ -12,6 +12,7 @@ Version project - 0.0.1
 
 Future updates:
 - Bug fixes
+- Add settings for F1+Fn, F2+Fn, Eject
 - Swapped the (Ё) and (~) keys
 - Battery percentage display in the Windows tray
 - Configure multimedia keys
