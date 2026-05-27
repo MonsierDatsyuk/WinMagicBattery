@@ -1,7 +1,7 @@
 # WinMagicBattery
 
 Project "WinMagicBattery" solves two issues with the Apple Magic Keyboard 2 (only A1843) when used in Windows:
-1. Software control of the Fn key mode. Allows switching the behavior of the function keys (F1–F12) between standard mode and multimedia mode.
+1. Software control of the Fn key mode. Allows switching the behavior of the function keys (F1–F19) between standard mode and multimedia mode.
 2. Displaying the keyboard's battery percentage. Low battery notification is supported.
 
 Original repositories:
