@@ -7,6 +7,14 @@ WinMagicBattery is a utility designed to solve two critical issues when using th
 - ✅ **Software control of Fn key mode** – Toggle between standard function keys (F1–F19) and multimedia mode without BIOS or registry hacks.
 - 🔋 **Battery percentage display** – Shows the keyboard's remaining battery level with low battery notifications.
 
+## ✅ What has been implemented
+
+| Feature | Status |
+|---------|--------|
+| Display keyboard battery percentage | ✅ Implemented |
+| Low battery notification | ✅ Implemented |
+| Software Fn mode switching (F1–F19 / multimedia) | ✅ Implemented |
+
 ## 📦 Supported Hardware
 
 - **Apple Magic Keyboard with Numeric Keypad** (Model **A1843** only)
