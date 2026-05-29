@@ -1,22 +1,55 @@
 # WinMagicBattery
 
-Project "WinMagicBattery" solves two issues with the Apple Magic Keyboard with Numeric NumPad (only A1843) when used in Windows:
-- Software control of the Fn key mode. Allows switching the behavior of the function keys (F1–F19) between standard mode and multimedia mode.
-- Displaying the keyboard's battery percentage. Low battery notification is supported.
+**Version 0.0.1**
 
-Original repositories:
-- https://github.com/bitwiser73/abracadabra
-- https://github.com/hank1101444/WinMagicBattery
+WinMagicBattery is a utility designed to solve two critical issues when using the **Apple Magic Keyboard with Numeric Keypad (Model A1843)** on Microsoft Windows.
 
-Version project - 0.0.1
+## 🎯 Features
 
-Future updates:
-- New UI
-- Delete unnecessary files
-- Bug fixes
-- Add settings for F1+Fn, F2+Fn, Eject
-- Swapped the (Ё) and (~) keys
-- Battery percentage display in the Windows tray
-- Configure multimedia keys
-- Add BootCamp drivers for the keyboard
-- Create an application installer
+- ✅ **Software control of Fn key mode** – Toggle between standard function keys (F1–F19) and multimedia mode without BIOS or registry hacks.
+- 🔋 **Battery percentage display** – Shows the keyboard's remaining battery level with low battery notifications.
+
+## 📦 Supported Hardware
+
+- **Apple Magic Keyboard with Numeric Keypad** (Model **A1843** only)
+
+## 🔗 Original Repositories
+
+This project builds upon the work of:
+
+- [abracadabra](https://github.com/bitwiser73/abracadabra) by [bitwiser73](https://github.com/bitwiser73)
+- [WinMagicBattery](https://github.com/hank1101444/WinMagicBattery) by [hank1101444](https://github.com/hank1101444)
+
+## 🚀 Future Updates (Roadmap)
+
+| Planned Improvement | Status |
+|---------------------|--------|
+| New user interface | 🔜 Planned |
+| Remove unnecessary files | 🔜 Planned |
+| Bug fixes | 🔜 Planned |
+| Settings for `F1+Fn`, `F2+Fn`, `Eject` | 🔜 Planned |
+| Swap `Ё` and `~` keys | 🔜 Planned |
+| Battery percentage in Windows tray | 🔜 Planned |
+| Configure multimedia keys | 🔜 Planned |
+| Add BootCamp drivers for keyboard | 🔜 Planned |
+| Create application installer | 🔜 Planned |
+
+## 🛠️ Usage
+
+*(To be expanded as development progresses)*
+
+1. Connect your Apple Magic Keyboard (A1843) via Bluetooth or USB.
+2. Run the WinMagicBattery utility.
+3. Use the interface to switch Fn mode and monitor battery level.
+
+## 📄 License
+
+Refer to the original repositories for licensing information.
+
+## 🤝 Contributing
+
+Contributions, bug reports, and feature requests are welcome!
+
+---
+
+**Note:** This project is in early development (v0.0.1). Some features may not yet be implemented.
