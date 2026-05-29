@@ -1,7 +1,5 @@
 # WinMagicBattery
 
-**Version 0.0.1**
-
 WinMagicBattery is a utility designed to solve two critical issues when using the **Apple Magic Keyboard with Numeric Keypad (Model A1843)** on Microsoft Windows.
 
 ## 🎯 Features
