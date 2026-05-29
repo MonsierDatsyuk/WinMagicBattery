@@ -5,12 +5,14 @@ Project "WinMagicBattery" solves two issues with the Apple Magic Keyboard with N
 - Displaying the keyboard's battery percentage. Low battery notification is supported.
 
 Original repositories:
-1. https://github.com/bitwiser73/abracadabra
-2. https://github.com/hank1101444/WinMagicBattery
+- https://github.com/bitwiser73/abracadabra
+- https://github.com/hank1101444/WinMagicBattery
 
 Version project - 0.0.1
 
 Future updates:
+- New UI
+- Delete unnecessary files
 - Bug fixes
 - Add settings for F1+Fn, F2+Fn, Eject
 - Swapped the (Ё) and (~) keys
