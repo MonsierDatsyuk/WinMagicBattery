@@ -60,4 +60,4 @@ Contributions, bug reports, and feature requests are welcome!
 
 ---
 
-**Note:** This project is in early development (v0.0.1). Some features may not yet be implemented.
+**Note:** This project is in early development (v0.1.0). Some features may not yet be implemented.
