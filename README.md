@@ -23,6 +23,7 @@ This project builds upon the work of:
 | Planned Improvement | Status |
 |---------------------|--------|
 | New user interface | 🔜 Planned |
+| Rename Keyboard | 🔜 Planned |
 | Remove unnecessary files | 🔜 Planned |
 | Bug fixes | 🔜 Planned |
 | Settings for `F1+Fn`, `F2+Fn`, `Eject` | 🔜 Planned |
