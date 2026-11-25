@@ -45,7 +45,7 @@ This project builds upon the work of:
 
 1. Install driver Keyboard
 2. Connect your Apple Magic Keyboard (A1843) via Bluetooth or USB.
-3. Run the WinMagicBattery utility.
+3. Run the utility.
 4. Use the interface to switch Fn mode and monitor battery level.
 
 ## 📄 License
