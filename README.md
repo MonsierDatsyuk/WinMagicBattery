@@ -32,9 +32,7 @@ This project builds upon the work of:
 |---------------------|--------|
 | New user interface | 🔜 Planned |
 | Rename Keyboard | 🔜 Planned |
-| Remove unnecessary files | 🔜 Planned |
-| Bug fixes | 🔜 Planned |
-| Settings for `F1+Fn`, `F2+Fn`, `Eject` | 🔜 Planned |
+| Settings for Multimedia key/Hotkeys | 🔜 Planned |
 | Swap `Ё` and `~` keys | 🔜 Planned |
 | Battery percentage in Windows tray | 🔜 Planned |
 | Configure multimedia keys | 🔜 Planned |
